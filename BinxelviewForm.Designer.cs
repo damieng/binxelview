@@ -168,12 +168,7 @@
             // 
             // menuStripMain
             // 
-            this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.presetToolStripMenuItem,
-            this.advancedToolStripMenuItem,
-            this.optionsToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.fileToolStripMenuItem, this.presetToolStripMenuItem, this.advancedToolStripMenuItem, this.optionsToolStripMenuItem, this.helpToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Size = new System.Drawing.Size(797, 24);
@@ -182,13 +177,7 @@
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openFileMenuItem,
-            this.reloadFileMenuItem,
-            this.saveAllVisibleFileMenuItem,
-            this.exportBinaryChunkFileMenuItem,
-            this.fileMenuSeparator,
-            this.exitFileMenuItem});
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.openFileMenuItem, this.reloadFileMenuItem, this.saveAllVisibleFileMenuItem, this.exportBinaryChunkFileMenuItem, this.fileMenuSeparator, this.exitFileMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
@@ -196,49 +185,49 @@
             // openFileMenuItem
             // 
             this.openFileMenuItem.Name = "openFileMenuItem";
-            this.openFileMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.openFileMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openFileMenuItem.Size = new System.Drawing.Size(192, 22);
             this.openFileMenuItem.Text = "&Open...";
             this.openFileMenuItem.Click += new System.EventHandler(this.openFileMenuItem_Click);
             // 
             // reloadFileMenuItem
             // 
             this.reloadFileMenuItem.Name = "reloadFileMenuItem";
-            this.reloadFileMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.reloadFileMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            this.reloadFileMenuItem.Size = new System.Drawing.Size(192, 22);
             this.reloadFileMenuItem.Text = "&Reload";
             this.reloadFileMenuItem.Click += new System.EventHandler(this.reloadFileMenuItem_Click);
             // 
             // saveAllVisibleFileMenuItem
             // 
             this.saveAllVisibleFileMenuItem.Name = "saveAllVisibleFileMenuItem";
-            this.saveAllVisibleFileMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.saveAllVisibleFileMenuItem.Text = "&Save &All Visible";
+            this.saveAllVisibleFileMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveAllVisibleFileMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.saveAllVisibleFileMenuItem.Text = "&Save All Visible";
             this.saveAllVisibleFileMenuItem.Click += new System.EventHandler(this.saveAllVisibleFileMenuItem_Click);
             // 
             // exportBinaryChunkFileMenuItem
             // 
             this.exportBinaryChunkFileMenuItem.Name = "exportBinaryChunkFileMenuItem";
-            this.exportBinaryChunkFileMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.exportBinaryChunkFileMenuItem.Text = "Export Binary Chunk...";
+            this.exportBinaryChunkFileMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.exportBinaryChunkFileMenuItem.Text = "Export &Binary Chunk...";
             this.exportBinaryChunkFileMenuItem.Click += new System.EventHandler(this.exportBinaryChunkFileMenuItem_Click);
             // 
             // fileMenuSeparator
             // 
             this.fileMenuSeparator.Name = "fileMenuSeparator";
-            this.fileMenuSeparator.Size = new System.Drawing.Size(188, 6);
+            this.fileMenuSeparator.Size = new System.Drawing.Size(189, 6);
             // 
             // exitFileMenuItem
             // 
             this.exitFileMenuItem.Name = "exitFileMenuItem";
-            this.exitFileMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.exitFileMenuItem.Size = new System.Drawing.Size(192, 22);
             this.exitFileMenuItem.Text = "E&xit";
             this.exitFileMenuItem.Click += new System.EventHandler(this.exitFileMenuItem_Click);
             // 
             // presetToolStripMenuItem
             // 
-            this.presetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reloadPresetMenuItem,
-            this.setDirectoryPresetMenuItem,
-            this.presetMenuSeparator});
+            this.presetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.reloadPresetMenuItem, this.setDirectoryPresetMenuItem, this.presetMenuSeparator});
             this.presetToolStripMenuItem.Name = "presetToolStripMenuItem";
             this.presetToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.presetToolStripMenuItem.Text = "&Preset";
@@ -264,9 +253,7 @@
             // 
             // advancedToolStripMenuItem
             // 
-            this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.twiddleZAdvancedMenuItem,
-            this.twiddleNAdvancedMenuItem});
+            this.advancedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.twiddleZAdvancedMenuItem, this.twiddleNAdvancedMenuItem});
             this.advancedToolStripMenuItem.Name = "advancedToolStripMenuItem";
             this.advancedToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.advancedToolStripMenuItem.Text = "&Advanced";
@@ -274,36 +261,20 @@
             // twiddleZAdvancedMenuItem
             // 
             this.twiddleZAdvancedMenuItem.Name = "twiddleZAdvancedMenuItem";
-            this.twiddleZAdvancedMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.twiddleZAdvancedMenuItem.Size = new System.Drawing.Size(127, 22);
             this.twiddleZAdvancedMenuItem.Text = "Twiddle &Z";
             this.twiddleZAdvancedMenuItem.Click += new System.EventHandler(this.twiddleZAdvancedMenuItem_Click);
             // 
             // twiddleNAdvancedMenuItem
             // 
             this.twiddleNAdvancedMenuItem.Name = "twiddleNAdvancedMenuItem";
-            this.twiddleNAdvancedMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.twiddleNAdvancedMenuItem.Size = new System.Drawing.Size(127, 22);
             this.twiddleNAdvancedMenuItem.Text = "Twiddle &N";
             this.twiddleNAdvancedMenuItem.Click += new System.EventHandler(this.twiddleNAdvancedMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.decimalPositionOptionsMenuItem,
-            this.hexadecimalPositionOptionsMenuItem,
-            this.optionsMenuSeparator1,
-            this.verticalLayoutOptionsMenuItem,
-            this.horizontalLayoutOptionsMenuItem,
-            this.optionsMenuSeparator2,
-            this.backgroundOptionsMenuItem,
-            this.gridOptionsMenuItem,
-            this.snapScrollOptionsMenuItem,
-            this.splitViewOptionsMenuItem,
-            this.optionsMenuSeparator3,
-            this.loadOptionsMenuItem,
-            this.saveOptionsMenuItem,
-            this.saveCurrentOptionsMenuItem,
-            this.saveOnExitOptionsMenuItem,
-            this.defaultOptionsMenuItem});
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.decimalPositionOptionsMenuItem, this.hexadecimalPositionOptionsMenuItem, this.optionsMenuSeparator1, this.verticalLayoutOptionsMenuItem, this.horizontalLayoutOptionsMenuItem, this.optionsMenuSeparator2, this.backgroundOptionsMenuItem, this.gridOptionsMenuItem, this.snapScrollOptionsMenuItem, this.splitViewOptionsMenuItem, this.optionsMenuSeparator3, this.loadOptionsMenuItem, this.saveOptionsMenuItem, this.saveCurrentOptionsMenuItem, this.saveOnExitOptionsMenuItem, this.defaultOptionsMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "&Options";
@@ -311,7 +282,7 @@
             // decimalPositionOptionsMenuItem
             // 
             this.decimalPositionOptionsMenuItem.Name = "decimalPositionOptionsMenuItem";
-            this.decimalPositionOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.decimalPositionOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.decimalPositionOptionsMenuItem.Text = "&Decimal Position";
             this.decimalPositionOptionsMenuItem.Click += new System.EventHandler(this.decimalPositionOptionsMenuItem_Click);
             // 
@@ -320,40 +291,40 @@
             this.hexadecimalPositionOptionsMenuItem.Checked = true;
             this.hexadecimalPositionOptionsMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.hexadecimalPositionOptionsMenuItem.Name = "hexadecimalPositionOptionsMenuItem";
-            this.hexadecimalPositionOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.hexadecimalPositionOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.hexadecimalPositionOptionsMenuItem.Text = "&Hexadecimal Position";
             this.hexadecimalPositionOptionsMenuItem.Click += new System.EventHandler(this.hexadecimalPositionOptionsMenuItem_Click);
             // 
             // optionsMenuSeparator1
             // 
             this.optionsMenuSeparator1.Name = "optionsMenuSeparator1";
-            this.optionsMenuSeparator1.Size = new System.Drawing.Size(200, 6);
+            this.optionsMenuSeparator1.Size = new System.Drawing.Size(203, 6);
             // 
             // verticalLayoutOptionsMenuItem
             // 
             this.verticalLayoutOptionsMenuItem.Checked = true;
             this.verticalLayoutOptionsMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.verticalLayoutOptionsMenuItem.Name = "verticalLayoutOptionsMenuItem";
-            this.verticalLayoutOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.verticalLayoutOptionsMenuItem.Text = "&Vertical layout";
+            this.verticalLayoutOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.verticalLayoutOptionsMenuItem.Text = "&Vertical Layout";
             this.verticalLayoutOptionsMenuItem.Click += new System.EventHandler(this.verticalLayoutOptionsMenuItem_Click);
             // 
             // horizontalLayoutOptionsMenuItem
             // 
             this.horizontalLayoutOptionsMenuItem.Name = "horizontalLayoutOptionsMenuItem";
-            this.horizontalLayoutOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.horizontalLayoutOptionsMenuItem.Text = "H&orizontal layout";
+            this.horizontalLayoutOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.horizontalLayoutOptionsMenuItem.Text = "H&orizontal Layout";
             this.horizontalLayoutOptionsMenuItem.Click += new System.EventHandler(this.horizontalLayoutOptionsMenuItem_Click);
             // 
             // optionsMenuSeparator2
             // 
             this.optionsMenuSeparator2.Name = "optionsMenuSeparator2";
-            this.optionsMenuSeparator2.Size = new System.Drawing.Size(200, 6);
+            this.optionsMenuSeparator2.Size = new System.Drawing.Size(203, 6);
             // 
             // backgroundOptionsMenuItem
             // 
             this.backgroundOptionsMenuItem.Name = "backgroundOptionsMenuItem";
-            this.backgroundOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.backgroundOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.backgroundOptionsMenuItem.Text = "Background &Colour...";
             this.backgroundOptionsMenuItem.Click += new System.EventHandler(this.backgroundOptionsMenuItem_Click);
             // 
@@ -362,7 +333,7 @@
             this.gridOptionsMenuItem.Checked = true;
             this.gridOptionsMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.gridOptionsMenuItem.Name = "gridOptionsMenuItem";
-            this.gridOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.gridOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.gridOptionsMenuItem.Text = "&Grid Padding";
             this.gridOptionsMenuItem.Click += new System.EventHandler(this.gridOptionsMenuItem_Click);
             // 
@@ -371,40 +342,40 @@
             this.snapScrollOptionsMenuItem.Checked = true;
             this.snapScrollOptionsMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.snapScrollOptionsMenuItem.Name = "snapScrollOptionsMenuItem";
-            this.snapScrollOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.snapScrollOptionsMenuItem.Text = "Sna&p scroll to next stride";
+            this.snapScrollOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.snapScrollOptionsMenuItem.Text = "Sna&p Scroll to Next Stride";
             this.snapScrollOptionsMenuItem.Click += new System.EventHandler(this.snapScrollOptionsMenuItem_Click);
             // 
             // splitViewOptionsMenuItem
             // 
             this.splitViewOptionsMenuItem.Name = "splitViewOptionsMenuItem";
-            this.splitViewOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.splitViewOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.splitViewOptionsMenuItem.Text = "Pixel &Window";
             this.splitViewOptionsMenuItem.Click += new System.EventHandler(this.splitViewOptionsMenuItem_Click);
             // 
             // optionsMenuSeparator3
             // 
             this.optionsMenuSeparator3.Name = "optionsMenuSeparator3";
-            this.optionsMenuSeparator3.Size = new System.Drawing.Size(200, 6);
+            this.optionsMenuSeparator3.Size = new System.Drawing.Size(203, 6);
             // 
             // loadOptionsMenuItem
             // 
             this.loadOptionsMenuItem.Name = "loadOptionsMenuItem";
-            this.loadOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.loadOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.loadOptionsMenuItem.Text = "&Load Options File...";
             this.loadOptionsMenuItem.Click += new System.EventHandler(this.loadOptionsMenuItem_Click);
             // 
             // saveOptionsMenuItem
             // 
             this.saveOptionsMenuItem.Name = "saveOptionsMenuItem";
-            this.saveOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.saveOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.saveOptionsMenuItem.Text = "&Save Options File...";
             this.saveOptionsMenuItem.Click += new System.EventHandler(this.saveOptionsMenuItem_Click);
             // 
             // saveCurrentOptionsMenuItem
             // 
             this.saveCurrentOptionsMenuItem.Name = "saveCurrentOptionsMenuItem";
-            this.saveCurrentOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.saveCurrentOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.saveCurrentOptionsMenuItem.Text = "Save Current Options";
             this.saveCurrentOptionsMenuItem.Click += new System.EventHandler(this.saveCurrentOptionsMenuItem_Click);
             // 
@@ -413,21 +384,20 @@
             this.saveOnExitOptionsMenuItem.Checked = true;
             this.saveOnExitOptionsMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.saveOnExitOptionsMenuItem.Name = "saveOnExitOptionsMenuItem";
-            this.saveOnExitOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.saveOnExitOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.saveOnExitOptionsMenuItem.Text = "Save Options on &Exit";
             this.saveOnExitOptionsMenuItem.Click += new System.EventHandler(this.saveOnExitOptionsMenuItem_Click);
             // 
             // defaultOptionsMenuItem
             // 
             this.defaultOptionsMenuItem.Name = "defaultOptionsMenuItem";
-            this.defaultOptionsMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.defaultOptionsMenuItem.Size = new System.Drawing.Size(206, 22);
             this.defaultOptionsMenuItem.Text = "&Reset to Default";
             this.defaultOptionsMenuItem.Click += new System.EventHandler(this.defaultOptionsMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutHelpMenuItem});
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {this.aboutHelpMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
@@ -593,16 +563,8 @@
             // 
             this.numericRowStrideBit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericRowStrideBit.Location = new System.Drawing.Point(65, 142);
-            this.numericRowStrideBit.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericRowStrideBit.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericRowStrideBit.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericRowStrideBit.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericRowStrideBit.Name = "numericRowStrideBit";
             this.numericRowStrideBit.Size = new System.Drawing.Size(51, 20);
             this.numericRowStrideBit.TabIndex = 12;
@@ -612,16 +574,8 @@
             // 
             this.numericNextStrideBit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericNextStrideBit.Location = new System.Drawing.Point(122, 142);
-            this.numericNextStrideBit.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericNextStrideBit.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericNextStrideBit.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericNextStrideBit.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericNextStrideBit.Name = "numericNextStrideBit";
             this.numericNextStrideBit.Size = new System.Drawing.Size(51, 20);
             this.numericNextStrideBit.TabIndex = 13;
@@ -632,16 +586,8 @@
             this.numericPixelStrideBit.BackColor = System.Drawing.SystemColors.Window;
             this.numericPixelStrideBit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericPixelStrideBit.Location = new System.Drawing.Point(7, 142);
-            this.numericPixelStrideBit.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericPixelStrideBit.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericPixelStrideBit.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericPixelStrideBit.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericPixelStrideBit.Name = "numericPixelStrideBit";
             this.numericPixelStrideBit.Size = new System.Drawing.Size(51, 20);
             this.numericPixelStrideBit.TabIndex = 11;
@@ -650,116 +596,56 @@
             // numericRowStrideByte
             // 
             this.numericRowStrideByte.Location = new System.Drawing.Point(65, 116);
-            this.numericRowStrideByte.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericRowStrideByte.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericRowStrideByte.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericRowStrideByte.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericRowStrideByte.Name = "numericRowStrideByte";
             this.numericRowStrideByte.Size = new System.Drawing.Size(51, 20);
             this.numericRowStrideByte.TabIndex = 9;
-            this.numericRowStrideByte.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
+            this.numericRowStrideByte.Value = new decimal(new int[] {8, 0, 0, 0});
             this.numericRowStrideByte.ValueChanged += new System.EventHandler(this.numericRowStrideByte_ValueChanged);
             // 
             // numericNextStrideByte
             // 
             this.numericNextStrideByte.Location = new System.Drawing.Point(122, 116);
-            this.numericNextStrideByte.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericNextStrideByte.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericNextStrideByte.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericNextStrideByte.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericNextStrideByte.Name = "numericNextStrideByte";
             this.numericNextStrideByte.Size = new System.Drawing.Size(51, 20);
             this.numericNextStrideByte.TabIndex = 10;
-            this.numericNextStrideByte.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
+            this.numericNextStrideByte.Value = new decimal(new int[] {8, 0, 0, 0});
             this.numericNextStrideByte.ValueChanged += new System.EventHandler(this.numericNextStrideByte_ValueChanged);
             // 
             // numericPixelStrideByte
             // 
             this.numericPixelStrideByte.Location = new System.Drawing.Point(7, 116);
-            this.numericPixelStrideByte.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericPixelStrideByte.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericPixelStrideByte.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericPixelStrideByte.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericPixelStrideByte.Name = "numericPixelStrideByte";
             this.numericPixelStrideByte.Size = new System.Drawing.Size(51, 20);
             this.numericPixelStrideByte.TabIndex = 8;
-            this.numericPixelStrideByte.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericPixelStrideByte.Value = new decimal(new int[] {1, 0, 0, 0});
             this.numericPixelStrideByte.ValueChanged += new System.EventHandler(this.numericPixelStrideByte_ValueChanged);
             // 
             // numericWidth
             // 
             this.numericWidth.Location = new System.Drawing.Point(65, 66);
-            this.numericWidth.Maximum = new decimal(new int[] {
-            65536,
-            0,
-            0,
-            0});
-            this.numericWidth.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericWidth.Maximum = new decimal(new int[] {65536, 0, 0, 0});
+            this.numericWidth.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.numericWidth.Name = "numericWidth";
             this.numericWidth.Size = new System.Drawing.Size(51, 20);
             this.numericWidth.TabIndex = 3;
-            this.numericWidth.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
+            this.numericWidth.Value = new decimal(new int[] {8, 0, 0, 0});
             this.numericWidth.ValueChanged += new System.EventHandler(this.numericWidth_ValueChanged);
             // 
             // numericHeight
             // 
             this.numericHeight.Location = new System.Drawing.Point(122, 66);
-            this.numericHeight.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericHeight.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericHeight.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.numericHeight.Name = "numericHeight";
             this.numericHeight.Size = new System.Drawing.Size(51, 20);
             this.numericHeight.TabIndex = 4;
-            this.numericHeight.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericHeight.Value = new decimal(new int[] {1, 0, 0, 0});
             this.numericHeight.ValueChanged += new System.EventHandler(this.numericHeight_ValueChanged);
             // 
             // labelHeight
@@ -792,24 +678,12 @@
             // numericBPP
             // 
             this.numericBPP.Location = new System.Drawing.Point(7, 66);
-            this.numericBPP.Maximum = new decimal(new int[] {
-            32,
-            0,
-            0,
-            0});
-            this.numericBPP.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericBPP.Maximum = new decimal(new int[] {32, 0, 0, 0});
+            this.numericBPP.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.numericBPP.Name = "numericBPP";
             this.numericBPP.Size = new System.Drawing.Size(51, 20);
             this.numericBPP.TabIndex = 2;
-            this.numericBPP.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
+            this.numericBPP.Value = new decimal(new int[] {8, 0, 0, 0});
             this.numericBPP.ValueChanged += new System.EventHandler(this.numericBPP_ValueChanged);
             // 
             // checkChunky
@@ -843,10 +717,7 @@
             this.dataGridPixel.AllowUserToResizeColumns = false;
             this.dataGridPixel.AllowUserToResizeRows = false;
             this.dataGridPixel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridPixel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.order,
-            this.offByte,
-            this.offBit});
+            this.dataGridPixel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.order, this.offByte, this.offBit});
             this.dataGridPixel.Enabled = false;
             this.dataGridPixel.Location = new System.Drawing.Point(179, 19);
             this.dataGridPixel.MultiSelect = false;
@@ -1068,24 +939,12 @@
             // numericZoom
             // 
             this.numericZoom.Location = new System.Drawing.Point(115, 43);
-            this.numericZoom.Maximum = new decimal(new int[] {
-            32,
-            0,
-            0,
-            0});
-            this.numericZoom.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.numericZoom.Maximum = new decimal(new int[] {32, 0, 0, 0});
+            this.numericZoom.Minimum = new decimal(new int[] {1, 0, 0, 0});
             this.numericZoom.Name = "numericZoom";
             this.numericZoom.Size = new System.Drawing.Size(42, 20);
             this.numericZoom.TabIndex = 5;
-            this.numericZoom.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
+            this.numericZoom.Value = new decimal(new int[] {2, 0, 0, 0});
             this.numericZoom.ValueChanged += new System.EventHandler(this.numericZoom_ValueChanged);
             // 
             // labelInfoPixel
@@ -1102,16 +961,8 @@
             // 
             this.numericPosBit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericPosBit.Location = new System.Drawing.Point(42, 43);
-            this.numericPosBit.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericPosBit.Minimum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            -2147483648});
+            this.numericPosBit.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericPosBit.Minimum = new decimal(new int[] {2147483647, 0, 0, -2147483648});
             this.numericPosBit.Name = "numericPosBit";
             this.numericPosBit.Size = new System.Drawing.Size(70, 20);
             this.numericPosBit.TabIndex = 3;
@@ -1121,16 +972,8 @@
             // 
             this.numericPosByte.Hexadecimal = true;
             this.numericPosByte.Location = new System.Drawing.Point(42, 19);
-            this.numericPosByte.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericPosByte.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericPosByte.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericPosByte.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericPosByte.Name = "numericPosByte";
             this.numericPosByte.Size = new System.Drawing.Size(70, 20);
             this.numericPosByte.TabIndex = 1;
@@ -1187,11 +1030,7 @@
             // numericTileSizeY
             // 
             this.numericTileSizeY.Location = new System.Drawing.Point(106, 34);
-            this.numericTileSizeY.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
+            this.numericTileSizeY.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
             this.numericTileSizeY.Name = "numericTileSizeY";
             this.numericTileSizeY.Size = new System.Drawing.Size(51, 20);
             this.numericTileSizeY.TabIndex = 1;
@@ -1201,16 +1040,8 @@
             // 
             this.numericTileStrideBitY.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericTileStrideBitY.Location = new System.Drawing.Point(106, 80);
-            this.numericTileStrideBitY.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericTileStrideBitY.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericTileStrideBitY.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericTileStrideBitY.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericTileStrideBitY.Name = "numericTileStrideBitY";
             this.numericTileStrideBitY.Size = new System.Drawing.Size(51, 20);
             this.numericTileStrideBitY.TabIndex = 5;
@@ -1219,16 +1050,8 @@
             // numericTileStrideByteY
             // 
             this.numericTileStrideByteY.Location = new System.Drawing.Point(106, 57);
-            this.numericTileStrideByteY.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericTileStrideByteY.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericTileStrideByteY.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericTileStrideByteY.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericTileStrideByteY.Name = "numericTileStrideByteY";
             this.numericTileStrideByteY.Size = new System.Drawing.Size(51, 20);
             this.numericTileStrideByteY.TabIndex = 3;
@@ -1246,11 +1069,7 @@
             // numericTileSizeX
             // 
             this.numericTileSizeX.Location = new System.Drawing.Point(49, 34);
-            this.numericTileSizeX.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
+            this.numericTileSizeX.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
             this.numericTileSizeX.Name = "numericTileSizeX";
             this.numericTileSizeX.Size = new System.Drawing.Size(51, 20);
             this.numericTileSizeX.TabIndex = 0;
@@ -1260,16 +1079,8 @@
             // 
             this.numericTileStrideBitX.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.numericTileStrideBitX.Location = new System.Drawing.Point(49, 80);
-            this.numericTileStrideBitX.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericTileStrideBitX.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericTileStrideBitX.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericTileStrideBitX.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericTileStrideBitX.Name = "numericTileStrideBitX";
             this.numericTileStrideBitX.Size = new System.Drawing.Size(51, 20);
             this.numericTileStrideBitX.TabIndex = 4;
@@ -1278,16 +1089,8 @@
             // numericTileStrideByteX
             // 
             this.numericTileStrideByteX.Location = new System.Drawing.Point(49, 57);
-            this.numericTileStrideByteX.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.numericTileStrideByteX.Minimum = new decimal(new int[] {
-            -2147483648,
-            0,
-            0,
-            -2147483648});
+            this.numericTileStrideByteX.Maximum = new decimal(new int[] {2147483647, 0, 0, 0});
+            this.numericTileStrideByteX.Minimum = new decimal(new int[] {-2147483648, 0, 0, -2147483648});
             this.numericTileStrideByteX.Name = "numericTileStrideByteX";
             this.numericTileStrideByteX.Size = new System.Drawing.Size(51, 20);
             this.numericTileStrideByteX.TabIndex = 2;
@@ -1343,40 +1146,36 @@
             // 
             // contextMenuPixel
             // 
-            this.contextMenuPixel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveImageContextItem,
-            this.saveAllContextItem,
-            this.positionToPixelContextItem,
-            this.pixelsToPaletteContextItem});
+            this.contextMenuPixel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.saveImageContextItem, this.saveAllContextItem, this.positionToPixelContextItem, this.pixelsToPaletteContextItem});
             this.contextMenuPixel.Name = "contextMenuPixel";
-            this.contextMenuPixel.Size = new System.Drawing.Size(160, 92);
+            this.contextMenuPixel.Size = new System.Drawing.Size(159, 92);
             // 
             // saveImageContextItem
             // 
             this.saveImageContextItem.Enabled = false;
             this.saveImageContextItem.Name = "saveImageContextItem";
-            this.saveImageContextItem.Size = new System.Drawing.Size(159, 22);
+            this.saveImageContextItem.Size = new System.Drawing.Size(158, 22);
             this.saveImageContextItem.Text = "&Save &Image";
             this.saveImageContextItem.Click += new System.EventHandler(this.saveImageContextItem_Click);
             // 
             // saveAllContextItem
             // 
             this.saveAllContextItem.Name = "saveAllContextItem";
-            this.saveAllContextItem.Size = new System.Drawing.Size(159, 22);
+            this.saveAllContextItem.Size = new System.Drawing.Size(158, 22);
             this.saveAllContextItem.Text = "Save &All Visible";
             this.saveAllContextItem.Click += new System.EventHandler(this.saveAllVisibleContextItem_Click);
             // 
             // positionToPixelContextItem
             // 
             this.positionToPixelContextItem.Name = "positionToPixelContextItem";
-            this.positionToPixelContextItem.Size = new System.Drawing.Size(159, 22);
+            this.positionToPixelContextItem.Size = new System.Drawing.Size(158, 22);
             this.positionToPixelContextItem.Text = "&Position to Pixel";
             this.positionToPixelContextItem.Click += new System.EventHandler(this.positionToPixelToolContextItem_Click);
             // 
             // pixelsToPaletteContextItem
             // 
             this.pixelsToPaletteContextItem.Name = "pixelsToPaletteContextItem";
-            this.pixelsToPaletteContextItem.Size = new System.Drawing.Size(159, 22);
+            this.pixelsToPaletteContextItem.Size = new System.Drawing.Size(158, 22);
             this.pixelsToPaletteContextItem.Text = "Pi&xels to Palette";
             this.pixelsToPaletteContextItem.Click += new System.EventHandler(this.pixelsToPaletteContextItem_Click);
             // 
@@ -1448,7 +1247,6 @@
             this.contextMenuPixel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
